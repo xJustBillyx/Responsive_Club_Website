@@ -330,7 +330,7 @@ footer p {
 }
 
 
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 600px) {
     .navbar {
         flex-direction: column;
         align-items: center;
