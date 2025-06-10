@@ -212,6 +212,7 @@ h1 {
     list-style: none;
     padding: 10px;
     text-align: left;
+    position: relative;;
 }
 
 #events ul li::before {
@@ -220,6 +221,9 @@ h1 {
     margin-right: 15px;
     font-size: 1.5rem;
     vertical-align: middle;
+    position: absolute;
+    left: -20px;
+    top: 2px;
 }
 
 /* Contact Section */
