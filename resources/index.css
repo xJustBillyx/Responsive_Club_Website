@@ -330,7 +330,339 @@ footer p {
 }
 
 
-@media screen and (max-width: 600px) {
+/* Universal */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    font-size: 1.3rem;
+    color: black;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.background {
+   background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 20px 0;
+    display: block;
+}
+
+h1::after, h2::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: 0.55rem;
+    background:linear-gradient(to right, #c62f37, #32c7b6);
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin:  0 auto;
+    background-color: #333; /* Tomato color */
+    color: white;
+    border: none;
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347; /* Tomato color on hover */
+}
+
+#contact a{
+    text-decoration: none;
+}
+
+
+
+
+/* NavBar */
+.logo-image {
+    height: 100px;
+    width: 300px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 35px;       
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #ff6347; /* Tomato color */
+    border-radius: 30px;
+    transition: width 0.3s ease;
+    margin-top: 5px;
+}
+
+
+
+/* Header Section */
+.hero {
+    background-image: url('./images/Desert\ Soldiers.jpeg');
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    display: block;
+    color: #f0f0f0;
+    font-size: 3rem;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+}
+
+.hero p{
+    display: block;
+    font-size: 2rem;
+    color: #f0f0f0;
+    text-align: center;
+    margin: 5rem 2rem 0 2rem;
+    text-shadow: 2px 0 #333, -2px 0 #333, 0 2px #333, 0 -2px #333,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    margin-top: 5rem;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    background-color: #333;
+}
+#about h2 {
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    margin-top: 20px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Gallery Section */
+
+.gallery img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Events Section */
+#events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+#events h2 {
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    margin-top: 20px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#events ul li {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+    position: relative;;
+}
+
+#events ul li::before {
+    content: '•';
+    color: #ff6347; /* Tomato color */
+    margin-right: 15px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 20px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Social Media Section */
+#social-media ul li {
+    display: inline;
+    margin: auto 0;
+    padding: 25px;
+    font-size: 1.5rem;
+}
+
+#social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-media a {
+    text-decoration: none;
+}
+
+#social-media a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar ul li {
+        margin: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        background-position: center;
+        height: 600px;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .gallery img {
+        max-height: 250px;
+        max-width: 250px;
+    }
+
+    #about p, #events ul li, #contact p{
+        font-size: 1rem;
+    }
+
+    #about h2, #events h2, #contact h2 {
+        font-size: 2rem;
+    }
+
+    #social-media ul li {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    svg {
+        height: 40px;
+        width: 40px;    
+        margin: 0 30px;
+        padding-right: 30px;
+    }
+
+    #social-media p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 378px) {
     .navbar {
         flex-direction: column;
         align-items: center;
