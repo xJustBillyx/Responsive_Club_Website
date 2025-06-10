@@ -296,8 +296,8 @@ footer p {
     }
 
     .gallery img {
-        height: 250px;
-        width: 250px;
+        max-height: 250px;
+        max-width: 250px;
     }
 
     #about p, #events ul li, #contact p{
@@ -330,15 +330,30 @@ footer p {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 378px) {
     .navbar {
         flex-direction: column;
         align-items: center;
     }
+
+    .navbar ul {
+    display: flex;
+    gap: 35px; /* Controls spacing between links */
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
     
     
     .navbar ul li {
         margin: 0 10px;
+        display: block;
+        margin: 0;
+    }
+
+    .logo-image{
+        height: 50px;
+        width: 200px;
     }
 
     .hero{
@@ -355,8 +370,10 @@ footer p {
     }
 
     .gallery img {
-        height: 200px;
-        width: 200px;
+        max-height: 120px;
+        max-width: 120px;
+        margin: 5px;
+
     }
 
     #about p, #events ul li, #contact p{
